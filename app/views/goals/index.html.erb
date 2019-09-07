@@ -3,13 +3,13 @@
 
     <% if Goal.exists? %>
       <% flash.each do |type, message| %>
-  <div class="main-alert main-alert--<%= type %>">
-    <i class="main-alert__icon icon icon-circle-check-bold"></i>
-    <p class="main-alert__txt">
-      <%= message %>
-    </p>
-  </div>
-<% end %>
+      <div class="main-alert main-alert--<%= type %>">
+        <i class="main-alert__icon icon icon-circle-check-bold"></i>
+        <p class="main-alert__txt">
+          <%= message %>
+        </p>
+      </div>
+    <% end %>
 
       <div class="goals-page__header">
         <h1 class="goals-page__title">My Goals</h1>
